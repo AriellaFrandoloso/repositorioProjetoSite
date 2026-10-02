@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,10 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">TMSI</a>
-        <!--Estrutura menu responsivo-->
-        <!--Para abrir no celular-->
-        <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu"> 
+        <a href = "#" class="logo">TMSI</a>
+    <!-- Estrutura Menu Responsivo -->
+    <!-- Para abrir no celular -->
+        <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -31,25 +31,113 @@
                 <div class="hero-content">
                     <h1>Hardware</h1>
                     <p>Compreender parte física e lógica do computador</p>
-                    <a href="#" class="btn-primary">Mais Informações</a>
+                    <a href="#sobre" class="btn-primary">Mais informações</a>
                 </div>
             </div>
             <div class="carousel-slide slide-2">
                 <div class="carousel-container">
                     <h1>Design</h1>
                     <p>Desenvolvimento frontend</p>
-                    <a href="#" class="btn-primary">Mais Informações</a>
+                    <a href="#topico" class="btn-primary">
+                        Mais informações
+                    </a>
                 </div>
             </div>
             <div class="carousel-slide slide-3">
                 <div class="carousel-container">
                     <h1>Projeto Integrador</h1>
                     <p>Mercado de trabalho, faculdade e empreendedorismo</p>
-                    <a href="#" class="btn-primary">Mais Informações</a>
+                    <a href="#contato" class="btn-primary">
+                        Mais informações
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-btn prev-btn" id="prevBtn">
+                <span class="botao esquerda"></span>
+            </button>
+            <button class="carousel-btn next-btn" id="nextBtn">
+                <span class="botao direita"></span>
+            </button>
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Hardware</h2>
+            <div class="grid-2-cols">
+                <div class="text-block">
+                    <p>Identificação recursos componentes físicos</p>
+                    <p>Como descobrir marca e modelo da placa-mãe</p>
+                </div>
+                <div class="stats-block">
+                    <div class="stat-card">
+                        <h3>33 horas</h3>
+                        <p>Carga Horária</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Segundo ano</h3>
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
+    <section id="topico" class="section bg-light">
+        <div class="container">
+            <h2>Tópicos da Disciplina</h2>
+            <div class="grid-3-cols">
+                <div class="card">
+                    <div class="icon">🖥️</div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Construção de sites responsivos</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🛡️</div>
+                    <h3>Segurança da Informação</h3>
+                    <p>Proteção de softwares e websites</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🎼</div>
+                    <h3>Música</h3>
+                    <p>Partituras, instrumentos e ritmo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Mais informações sobre o curso</h2>
+            <form id="contatoForm" class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" placeholder="Informe seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+                </div>
+                <button type="submit" class="btn-primary posicaoBotao">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container grid-footer">
+            <div class="footer-col">
+                <h3>TMSI</h3>
+                <p>Curso Técnico em Manutenção e Suporte em Informática</p>
+            </div>
+        </div> <!-- Fecha div grid footer -->
+        <div class="footer-bottom">
+            <p>&copy; 2026. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
