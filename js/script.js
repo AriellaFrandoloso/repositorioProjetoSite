@@ -55,5 +55,14 @@ document.addEventListener("DOMContentLoaded", () => {
         startSlide();
     });
 
-    
+    dot.forEach((dots) =>{
+        dots.addEventListener("click", (e) =>{
+            const index = parseInt(e.target.getAttribute("data-index"));
+            showSlide(index);
+            stopSlide();
+            startSlide();
+        });
+    });
+
+    startSlide();
 });
